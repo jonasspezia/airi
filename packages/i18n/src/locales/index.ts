@@ -3,6 +3,7 @@ import es from './es'
 import fr from './fr'
 import ja from './ja'
 import ko from './ko'
+import ptBR from './pt-BR'
 import ru from './ru'
 import vi from './vi'
 import zhHans from './zh-Hans'
@@ -14,6 +15,7 @@ export default {
   fr,
   ko,
   ja,
+  'pt-BR': ptBR,
   ru,
   vi,
   'zh-Hans': zhHans,

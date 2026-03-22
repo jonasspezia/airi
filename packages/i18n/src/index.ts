@@ -3,6 +3,8 @@ export const all = {
   'es': 'Español',
   'fr': 'Français',
   'ja': '日本語',
+  'ko': '한국어',
+  'pt-BR': 'Português (Brasil)',
   'ru': 'Русский',
   'vi': 'Tiếng Việt',
   'zh-Hans': '简体中文',
