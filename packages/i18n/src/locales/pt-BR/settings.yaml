@@ -1,0 +1,1056 @@
+common:
+  save: Salvar
+animations:
+  stage-transitions:
+    title: Desativar Transições de Palco
+  use-page-specific-transitions:
+    description: >-
+      Algumas páginas terão suas próprias transições, isso substituirá as
+      transições de palco
+    title: Usar Transições Específicas da Página
+dialogs:
+  onboarding:
+    title: Bem-vindo(a) ao AIRI!
+    description: Vamos configurar seu primeiro provedor de IA para começar.
+    selectProvider: Escolha um Provedor de IA
+    configureProvider: Configurar {provider}
+    apiKey: Chave da API
+    apiKeyHelp: Obtenha sua chave de API do {provider} e cole aqui
+    baseUrl: URL Base
+    baseUrlHelp: URL do endpoint da API (use o padrão se não tiver certeza)
+    accountId: ID da Conta
+    validationSuccess: Validação da configuração bem-sucedida
+    validationPartial: Configuração parcialmente validada
+    validationFailed: Falha na validação da configuração
+    validationError: 'Erro de validação: {error}'
+    testGeneration: Teste de Geração
+    testGenerationRunning: Testando...
+    testGenerationFailed: Teste de geração falhou
+    skipForNow: Pular por agora
+    saveAndContinue: Salvar e Continuar
+    next: Próximo
+    retry: Tentar novamente
+    start: Vamos lá!
+    select-model: Escolher modelo
+    no-models: Nenhum modelo disponível
+    no-models-help: >-
+      Por favor, volte ao passo anterior e verifique sua chave de API, ou
+      verifique a conexão de rede.
+    permissions:
+      title: Notificações
+      description: Você pode permitir notificações agora ou continuar e configurar depois.
+      notificationsTitle: Notificações
+      notificationsDescription: Permitir lembretes e atualizações importantes de status.
+      notificationsAction: Solicitar permissão de notificação
+      notificationsNotGrantedHint: Se negado, você pode ativar notificações depois nas Configurações do iOS.
+      openSettings: Abrir Configurações do iOS
+      optionalHint: Você pode continuar mesmo sem conceder permissão de notificação.
+      stateUnknown: Não solicitado
+      stateRequesting: Solicitando...
+      stateGranted: Concedido
+      stateNotGranted: Não concedido
+language:
+  title: Idioma
+  description: Idioma da interface
+controls-island:
+  icon-size:
+    title: Tamanho dos Ícones da Ilha de Controles
+    description: Ajustar o tamanho dos ícones da ilha de controles
+    auto: Automático (responsivo)
+    large: Grande (padrão)
+    small: Pequeno
+live2d:
+  change-model:
+    from-file: Carregar do Arquivo
+    from-file-select: Selecionar
+    from-url: Carregar da URL
+    from-url-confirm: Carregar
+    from-url-placeholder: Insira a URL do modelo Live2D
+    title: Trocar Modelo
+  edit-motion-map:
+    title: Editar mapa de movimentos
+  map-motions:
+    play: Reproduzir Movimento
+    title: Mapear Movimentos
+  title: Configurações Live2D
+  scale-and-position:
+    title: Escala e Posição
+    scale: Escala
+    x: X
+    'y': 'Y'
+  switch-to-vrm:
+    title: Trocar para Avatar 3D?
+    change-to-vrm: Clique aqui para trocar para a configuração de avatar 3D (VRM)
+  theme-color-from-model:
+    title: Extrair cores do modelo
+    button-extract:
+      title: Extrair
+  focus:
+    title: Desativar rastreamento do mouse pelo modelo
+    button-disable:
+      title: Desativar
+  fps:
+    title: FPS
+    description: Limitar taxa de quadros de renderização
+    options:
+      unlimited: Sem Limite
+microphone: Microfone
+models: Modelo
+pages:
+  card:
+    activate: Ativar
+    active: Ativo
+    active_badge: Atualmente Ativo
+    cancel: Cancelar ação
+    save: Salvar alterações
+    card_not_found: Card não encontrado
+    character: Personagem
+    close: Fechar
+    chat:
+      provider: Chat / Provedor
+    consciousness:
+      model: Consciência / Modelo
+    created_by: criado por
+    creator_notes: Notas do Criador
+    delete: Excluir
+    delete_card: Excluir Card
+    delete_confirmation: Tem certeza de que deseja excluir este card?
+    description: Usar presets de AIRI character cards
+    description_label: Descrição
+    drop_here: Solte para enviar
+    create_card: Criar um novo Card
+    edit_card: Editar Card
+    creation:
+      identity: Identidade
+      name: Nome
+      nickname: Apelido
+      description: Descrição
+      behavior: Comportamento
+      greetings: Saudações (uma por linha)
+      settings: Configurações
+      version: Versão
+      create: Criar
+      defaults:
+        name: Nome
+        personality: Você é um humano comum, curioso sobre tudo.
+        scenario: Você acordou recentemente e esqueceu tudo sobre sua vida anterior.
+        systemprompt: Você receberá mensagens, responda a elas como um humano real.
+        posthistoryinstructions: Lembre-se de imitar um humano.
+      modules_info: >-
+        Configure módulos para este character card. Se não definido, a
+        configuração padrão de módulos será usada.
+      use_default: Usar padrão
+      use_default_not_configured: Usar padrão (não configurado)
+      fields_info:
+        subtitle: >-
+          Você pode colocar aqui alguns detalhes sobre o personagem que está
+          criando, explicar sua história e contexto, e como suas interações
+          devem ser respondidas.
+        name: É o nome formal deste personagem.
+        nickname: Você também pode dar um apelido que será usado com prioridade.
+        description: Descrição deste personagem.
+        notes: Se quiser adicionar algumas notas pessoais.
+        personality: >-
+          Descreva aqui a personalidade do seu personagem. Tímido? Curioso?
+          Qualquer outra coisa?
+        scenario: Quais são os arredores? Qual é a situação atual?
+        greetings_field: Saudações
+        greetings: Como seu personagem deveria dizer "olá"?
+        systemprompt: Explique aqui para o LLM de IA como ele deve responder quando solicitado.
+        posthistoryinstructions: Coloque aqui qualquer coisa que o LLM de IA deve ler após o histórico de mensagens.
+        version: >-
+          Versão do card, você deve incrementar se estiver fazendo alterações
+          a partir de um card anterior.
+        consciousness_model: Selecione o modelo de consciência (modelo de IA) para este personagem.
+        speech_model: Selecione o modelo de síntese de fala e voz para este personagem.
+      errors:
+        name: O nome deve ser válido ou não vazio.
+        version: 'Erro: Número de versão inválido!'
+        description: 'Erro: Você deve fornecer uma descrição para este card.'
+        personality: 'Erro: Uma personalidade deve ser fornecida para este personagem.'
+        scenario: 'Erro: Um cenário é obrigatório.'
+        systemprompt: 'Erro: Por favor, forneça um prompt de sistema.'
+        posthistoryinstructions: 'Erro: O prompt pós-histórico é obrigatório.'
+    modules: Módulos
+    name_asc: Nome (A-Z)
+    name_desc: Nome (Z-A)
+    no_cards: Nenhum card ainda. Clique no botão acima para enviar um!
+    no_results: Nenhum card correspondente encontrado
+    personality: Personalidade
+    posthistoryinstructions: Instruções Pós-Histórico
+    recent: Adicionados Recentemente
+    scenario: Cenário
+    search: Buscar cards...
+    sort_by: Ordenar por
+    body-model: Corpo / Modelo de Exibição
+    speech:
+      provider: Fala / Provedor
+      model: Fala / Modelo
+      voice: Fala / Voz
+    systemprompt: Prompt de Sistema
+    title: AIRI Card
+    try_different_search: Tente um termo de busca diferente
+    upload: Enviar
+    upload_desc: Clique ou arraste o arquivo para enviar
+  memory:
+    description: Onde as memórias são armazenadas e organizadas
+    title: Memória
+  data:
+    title: Dados
+    description: Gerenciar dados armazenados do AIRI, exportações e redefinições
+    sections:
+      chats:
+        title: Sessões de chat
+        description: Exportar ou importar sessões de chat salvas.
+        export: Exportar chats
+        import: Importar chats
+        delete: Excluir todas as sessões de chat
+      models:
+        title: Modelos
+        description: Remover modelos Live2D/VRM importados.
+        delete: Excluir todos os modelos
+      modules:
+        title: Módulos
+        description: Redefinir preferências e credenciais de módulos.
+        reset: Redefinir configurações de módulos
+      providers:
+        title: Provedores
+        description: Redefinir todas as configurações e credenciais de provedores.
+        reset: Redefinir configurações de provedores
+      danger:
+        title: Zona de perigo
+        description: Ações irreversíveis. Exporte o que precisar antes de continuar.
+      all:
+        title: Excluir todos os dados
+        description: Apagar todas as configurações locais, configurações de provedores e modelos.
+        delete: Excluir todos os dados
+      desktop-folder:
+        title: Abrir pasta de dados do aplicativo
+        description: Abrir a pasta de dados do AIRI no gerenciador de arquivos.
+        open: Abrir pasta
+      desktop:
+        title: Redefinir configurações e estados do desktop
+        description: Limpar configurações e estado de execução do AIRI desktop.
+        reset: Redefinir dados do desktop
+    confirmations:
+      tooltip: Tem certeza?
+      'yes': 'Sim'
+    status:
+      exported: Sessões de chat exportadas.
+      imported: Sessões de chat importadas.
+      import_error: Falha ao importar sessões de chat. Verifique o formato do arquivo.
+      chats_deleted: Sessões de chat excluídas.
+      models_deleted: Modelos excluídos.
+      modules_reset: Configurações de módulos redefinidas.
+      providers_reset: Configurações de provedores redefinidas.
+      all_deleted: Todos os dados locais excluídos.
+      desktop_reset: Dados do desktop redefinidos.
+  models:
+    description: Live2D, VRM, etc.
+    title: Modelos
+    sections:
+      section:
+        live2d:
+          title: Live2D
+          description: Configurar modelos e configurações Live2D
+        vrm:
+          title: VRM
+          description: Configurar modelos e configurações 3D VRM
+        scene: Cena
+  modules:
+    beat_sync:
+      description: Vibre com as batidas da fonte de áudio
+      title: Sincronização de Batida
+      sections:
+        audio_source:
+          actions:
+            start_screen_capture: Iniciar captura de tela
+            stop: Parar
+          description: Selecione uma fonte de áudio para detectar batidas.
+          title: Fonte de áudio
+        beat_visualizer:
+          title: Visualizador de batidas
+        parameters:
+          advanced_parameters: Parâmetros Avançados
+          description: Ajustar os parâmetros de detecção de batidas.
+          title: Parâmetros
+          parameters:
+            adaptive_threshold:
+              description: >-
+                Se deve aplicar limites adaptativos baseados na variação do
+                sinal ao longo do tempo.
+              label: Limite adaptativo
+            buffer_duration:
+              description: Duração do buffer de análise interno.
+              label: Duração do buffer
+            envelope_filter_frequency:
+              description: >-
+                Frequência do filtro de envelope aplicado para suavizar mudanças
+                de energia.
+              label: Frequência do filtro de envelope
+            highpass_filter_frequency:
+              description: >-
+                Frequência do filtro passa-alta aplicado para reduzir frequências
+                baixas como ruídos sub-graves.
+              label: Frequência do filtro passa-alta
+            lowpass_filter_frequency:
+              description: >-
+                Frequência do filtro passa-baixa aplicado para reduzir
+                frequências altas como vocais.
+              label: Frequência do filtro passa-baixa
+            min_beat_interval:
+              description: BPM máximo ou intervalo mínimo entre batidas detectadas.
+              label: BPM máximo / Intervalo mínimo de batida
+            sensitivity:
+              label: Sensibilidade
+            spectral_flux:
+              description: Se deve habilitar detecção de onset baseada em fluxo espectral.
+              label: Fluxo espectral
+            warmup:
+              description: Se deve aquecer antes de detectar batidas para melhor precisão.
+              label: Aquecimento
+    consciousness:
+      description: Personalidade, modelo desejado, etc.
+      sections:
+        section:
+          provider-model-selection:
+            collapse: Recolher
+            custom_model_placeholder: Digite o nome do modelo personalizado...
+            current_model_label: 'Modelo atual:'
+            description: Selecione o provedor LLM adequado para consciência
+            error: Erro ao carregar modelos
+            health_check_failed: Verificação de saúde falhou
+            no_providers_configured_title: Nenhum Provedor Configurado
+            no_providers_configured_description: Clique aqui para configurar seus provedores LLM
+            expand: Expandir
+            loading: Carregando modelos disponíveis...
+            manual_model_name: Nome do Modelo
+            manual_model_placeholder: Digite o nome do modelo para usar com este provedor
+            no_models: Nenhum modelo disponível
+            no_models_description: Nenhum modelo foi encontrado para este provedor
+            no_search_results: Nenhum modelo correspondente
+            no_search_results_description: Nenhum modelo corresponde a '{query}'. Tente um termo diferente.
+            not_supported: Listagem de modelos não suportada
+            not_supported_description: Este provedor não suporta funcionalidade de listagem de modelos
+            search_placeholder: Buscar modelos...
+            search_results: Encontrados {count} de {total} modelos
+            show_less: Mostrar menos
+            show_more: Mostrar mais
+            subtitle: Selecione um modelo padrão do provedor
+            title: Modelo
+      title: Consciência
+    description: Pensamento, visão, síntese de fala, jogos, etc.
+    gaming-factorio:
+      description: Jogando Factorio!
+      title: Factorio
+      enable: Ativar Integração Factorio
+      enable-description: Permitir que AIRI interaja com o jogo Factorio
+      server-address: Endereço do Servidor
+      server-address-description: O endereço IP ou hostname do servidor Factorio
+      server-address-placeholder: Digite o endereço do servidor (ex., localhost ou 192.168.1.100)
+      server-port: Porta do Servidor
+      server-port-description: O número da porta do servidor Factorio (padrão 34197)
+      username: Nome de Usuário
+      username-description: Seu nome de usuário no servidor Factorio
+      username-placeholder: Digite seu nome de usuário Factorio
+      configured: Factorio está configurado corretamente!
+    gaming-minecraft:
+      description: Jogando Minecraft!
+      title: Minecraft
+      enable: Ativar Integração Minecraft
+      enable-description: Permitir que AIRI interaja com o jogo Minecraft
+      server-address: Endereço do Servidor
+      server-address-description: O endereço IP ou hostname do servidor Minecraft
+      server-address-placeholder: Digite o endereço do servidor (ex., localhost ou play.exemplo.com)
+      server-port: Porta do Servidor
+      server-port-description: O número da porta do servidor Minecraft (padrão 25565)
+      username: Nome de Usuário
+      username-description: Seu nome de usuário no servidor Minecraft
+      username-placeholder: Digite seu nome de usuário Minecraft
+      configured: Minecraft está configurado corretamente!
+    hearing:
+      description: Configure como o reconhecimento de fala funciona
+      title: Audição
+      sections:
+        section:
+          provider-selection:
+            description: Selecione o provedor adequado de reconhecimento de fala
+    memory-long-term:
+      description: Configurações e gerenciamento específicos de memória de longo prazo
+      title: Memória de Longo Prazo
+    memory-short-term:
+      description: Configurações e gerenciamento específicos de memória de curto prazo
+      title: Memória de Curto Prazo
+    messaging-discord:
+      description: Chat e chat de voz pelo Discord
+      title: Discord
+      enable: Ativar Integração Discord
+      enable-description: Permitir que AIRI interaja através do Discord
+      token: Token do Bot
+      token-description: Seu token do bot Discord
+      token-placeholder: Digite seu token do bot Discord
+      configured: Discord está configurado corretamente!
+    speech:
+      description: Síntese de fala
+      sections:
+        section:
+          playground:
+            buttons:
+              stop:
+                label: Parar
+            select-voice:
+              loading: Carregando modelo...
+              required: Por favor, selecione uma voz
+          provider-voice-selection:
+            custom_model_placeholder: Digite o nome do modelo personalizado...
+            custom_voice_placeholder: Digite o ID de voz personalizado...
+            description: Selecione o provedor de fala adequado
+            no_models: Nenhum modelo disponível
+            no_models_description: Nenhum modelo foi encontrado para este provedor
+            no_voices: Nenhuma voz disponível
+            no_voices_description: Nenhuma voz foi encontrada para este provedor
+            no_voices_hint: Você pode digitar um nome de voz personalizado abaixo.
+            pause: Pausar
+            play_sample: Reproduzir Amostra
+            search_models_placeholder: Buscar modelos...
+            search_models_results: Encontrados {count} de {total} modelos
+            search_voices_placeholder: Buscar vozes...
+            search_voices_results: Encontradas {count} de {total} vozes
+            unsupported_voice_warning_title: Nenhuma voz suportada
+            unsupported_voice_warning_content: >-
+              Tente um modelo ou provedor diferente. Estamos trabalhando para
+              suportar todas as vozes para este modelo o mais rápido possível.
+              Se precisar urgentemente, nos avise no GitHub em
+              https://github.com/moeru-ai/airi/issues.
+            show_less: Mostrar menos
+            show_more: Mostrar mais
+            title: Provedor
+          voice-settings:
+            input-ssml:
+              placeholder: Digite texto SSML...
+            use-ssml:
+              description: Ativar para inserir SSML bruto em vez de texto simples
+              label: Usar SSML Personalizado
+      title: Fala
+    title: Módulos
+    vision:
+      description: Visão
+      title: Visão
+    x:
+      description: Navegação e uso do X / Twitter
+      title: X / Twitter
+      enable: Ativar Integração X / Twitter
+      enable-description: Permitir que AIRI interaja com X / Twitter
+      api-key: Chave da API
+      api-key-description: Sua chave de API do X / Twitter
+      api-key-placeholder: Digite sua chave de API do X / Twitter
+      api-secret: Segredo da API
+      api-secret-description: Seu segredo de API do X / Twitter
+      api-secret-placeholder: Digite seu segredo de API do X / Twitter
+      access-token: Token de Acesso
+      access-token-description: Seu token de acesso do X / Twitter
+      access-token-placeholder: Digite seu token de acesso do X / Twitter
+      access-token-secret: Segredo do Token de Acesso
+      access-token-secret-description: Seu segredo do token de acesso do X / Twitter
+      access-token-secret-placeholder: Digite seu segredo do token de acesso do X / Twitter
+      configured: X / Twitter está configurado corretamente!
+    mcp-server:
+      description: Conectar e gerenciar servidor e ferramentas MCP
+      title: Servidor MCP
+      config-path: Caminho do arquivo de configuração
+      runtime-title: Status de execução
+      actions:
+        open-config: Abrir mcp.json
+        apply-and-restart: Salvar e reiniciar MCP stdio
+      messages:
+        opened: Arquivo de configuração aberto em {path}
+        restarted: >-
+          Servidores MCP reiniciados. Iniciados {started}, falharam {failed},
+          pulados {skipped}
+  providers:
+    explained:
+      chat: Provedores de modelos de geração de texto. Ex. OpenRouter, OpenAI, Ollama.
+      Speech: Provedores de modelos de fala (texto-para-fala). Ex. ElevenLabs, Azure Speech.
+      Transcription: >-
+        Provedores de modelos de transcrição (fala-para-texto). Ex. Whisper.cpp,
+        OpenAI, Azure Speech
+    helpinfo:
+      title: Primeira vez aqui?
+      description: >
+        AIRI requer pelo menos um provedor de {chat} configurado para pensar
+        e se comportar corretamente. Você pode pensar nisso como o cérebro dos
+        personagens que vivem no sistema AIRI.
+    catalog:
+      edit:
+        config-id-not-found: Configuração do provedor não encontrada.
+        definition-id-not-found: Definição do provedor não encontrada.
+        actions:
+          more-options: Mais opções
+          delete: Excluir
+        validation:
+          failed:
+            title: Verifique suas configurações de provedor, a validação falhou.
+            description: >-
+              Você ainda pode salvar a configuração atual se quiser prosseguir.
+            action: Salvar mesmo assim
+        config:
+          common:
+            fields:
+              field:
+                api-key:
+                  label: Chave da API
+                  description: Chave de API usada para autorizar requisições a este provedor
+                  placeholder: sk-...
+                base-url:
+                  label: URL Base
+                  description: >-
+                    A URL base usada para conectar ao serviço remoto.
+                    Geralmente parece com http://localhost:11434/v1 ou
+                    https://exemplo.com/v1.
+                  placeholder: URL base...
+                headers:
+                  label: Cabeçalhos HTTP Personalizados
+                  description: Adicionar cabeçalhos HTTP personalizados
+                  key:
+                    placeholder: Chave
+                  value:
+                    placeholder: Valor
+                thinking-mode:
+                  label: Modo de Pensamento
+                  description: >
+                    Controla o comportamento de pensamento do Ollama. GPT-OSS suporta apenas níveis baixo/médio/alto.
+                  options:
+                    auto: Automático (padrão do provedor)
+                    disable: Desativar
+                    enable: Ativar
+                    low: Baixo
+                    medium: Médio
+                    high: Alto
+        validators:
+          actions:
+            validate: Validar
+          empty: Nenhuma etapa de validação disponível.
+          openai-compatible:
+            check-config:
+              title: Configuração
+            check-connectivity:
+              title: Conectividade
+            check-supports-model-listing:
+              title: Listar Modelos
+            check-supports-chat-completion:
+              title: Conclusão de Chat
+          status:
+            validating: Validando...
+            valid: Aprovado
+            invalid: Com erro
+          title: Verificações
+        providers:
+          provider:
+            ollama:
+              troubleshooting:
+                validators:
+                  openai-compatible-check-connectivity:
+                    label: Configuração extra necessária para Ollama
+                    content: >-
+                      Sentimos que a verificação de conectividade falhou para o
+                      Ollama. Não se preocupe, para instâncias Ollama, é
+                      necessária uma configuração extra para funcionar. Você
+                      precisa definir <code>OLLAMA_HOST</code> explicitamente ao
+                      iniciar o aplicativo Ollama ou o servidor CLI do Ollama.
+                      Para informações detalhadas, consulte o <a
+                      href="https://airi.moeru.ai/docs/en/docs/manual/integrations/providers/chat/ollama">guia
+                      de integração Ollama</a>.
+    common:
+      continueAnyway: Continuar Mesmo Assim
+      goToModelSelection: 'Selecionar Modelo →'
+      fields:
+        field:
+          api-key:
+            label: Campo de Chave da API
+      section:
+        advanced:
+          fields:
+            field:
+              headers:
+                description: Adicionar cabeçalhos HTTP personalizados
+                key:
+                  placeholder: Chave
+                label: Cabeçalhos HTTP
+                value:
+                  placeholder: Valor
+          title: Avançado
+        basic:
+          description: Configurações essenciais
+          title: Básico
+        voice:
+          title: Configurações de Voz
+    description: LLMs, provedores de fala, etc.
+    provider:
+      app-local-audio-transcription:
+        title: App (Local)
+        description: https://github.com/moeru-ai/xsai-transformers
+      app-local-audio-speech:
+        title: App (Local)
+        description: https://github.com/moeru-ai/xsai-transformers
+      browser-local-audio-transcription:
+        title: Navegador (Local)
+        description: https://github.com/moeru-ai/xsai-transformers
+      browser-local-audio-speech:
+        title: Navegador (Local)
+        description: https://github.com/moeru-ai/xsai-transformers
+      alibaba-cloud-model-studio:
+        description: bailian.console.aliyun.com
+        title: Alibaba Cloud Model Studio
+      anthropic:
+        description: anthropic.com
+        title: Anthropic | Claude
+        helpinfo:
+          title: Antes de começar
+          description:
+            part1: >-
+              Embora a Anthropic tenha anunciado recentemente que está com
+              suporte beta para compatibilidade com o SDK da OpenAI
+            part2: (você pode ler mais aqui)
+            part3: mas devido aos detalhes de implementação que vêm com
+            part4: >-
+              restrições que não estão alinhadas com o SDK da OpenAI, atualmente
+              não é possível usar este provedor no navegador.
+            part5: >-
+              Se você precisar usar este provedor, será necessário um backend
+              de proxy dedicado como uma Serverless Function rodando em
+            part6: ou alguns serviços de bypass CORS para contornar as restrições CORS.
+      cloudflare-workers-ai:
+        description: cloudflare.com
+        fields:
+          field:
+            account-id:
+              description: ID da Conta Cloudflare
+              label: ID da Conta
+              placeholder: Seu ID da Conta Cloudflare
+            api-key:
+              placeholder: Insira a Chave de API Cloudflare
+        title: Cloudflare Workers AI
+      common:
+        status:
+          validating: Validando
+          valid: A configuração parece ser válida.
+        fields:
+          field:
+            pitch:
+              description: Ajustar o tom da fala sintetizada (ex., mais agudo ou mais grave)
+              label: Tom
+            speed:
+              description: Ajustar a velocidade da fala
+              label: Velocidade
+            volume:
+              description: Ajustar o volume da fala
+              label: Volume
+      deepgram-tts:
+        description: deepgram.com
+        title: Deepgram
+      speech-noop:
+        title: Nenhum
+        description: Sem saída de fala.
+      deepseek:
+        description: deepseek.com
+        title: DeepSeek
+      elevenlabs:
+        description: elevenlabs.io
+        fields:
+          field:
+            simularity-boost:
+              description: Aderência à similaridade de voz
+              label: Aumento de Similaridade
+            speaker-boost:
+              description: Melhorar similaridade do locutor
+              label: Aumento do Locutor
+            speed:
+              description: Velocidade de geração de fala
+              label: Velocidade
+            stability:
+              description: Estabilidade e aleatoriedade da voz
+              label: Estabilidade
+            style:
+              description: Exagero do estilo de voz
+              label: Estilo
+        playground:
+          buttons:
+            button:
+              test-voice:
+                generating: Gerando...
+                label: Testar Voz
+          fields:
+            field:
+              input:
+                placeholder: Digite texto para testar a voz...
+              language:
+                description: Selecionar idioma da voz
+                label: Idioma
+              voice:
+                description: Selecionar voz preferida
+                label: Voz
+          title: Playground de Voz
+          validation:
+            error-missing-api-key: Por favor, insira uma chave de API para testar a voz.
+        title: ElevenLabs
+      kokoro-local:
+        description: Texto-para-fala local usando Kokoro-82M.
+        fields:
+          field:
+            model:
+              label: Seleção de Modelo
+              description: Modelos menores carregam mais rápido mas podem ter qualidade ligeiramente inferior.
+        models:
+          fp32-webgpu:
+            description: >-
+              Modelo de precisão total usando WebGPU — Recomendado para
+              dispositivos suportados
+          fp32:
+            description: Modelo de precisão total
+          fp16:
+            description: Meia precisão
+          q8:
+            description: Quantizado 8-bit
+          q4:
+            description: Quantizado 4-bit
+          q4f16:
+            description: 4-bit com FP16
+        playground:
+          default-text: Olá! Este é um teste do sistema de texto-para-fala Kokoro.
+          title: Playground de Voz
+        title: Kokoro TTS (Local)
+      fireworks:
+        description: fireworks.ai
+        title: Fireworks.ai
+      microsoft-speech:
+        description: speech.microsoft.com
+        fields:
+          field:
+            region:
+              description: Região do Serviço de Fala
+              label: Região
+        title: Microsoft / Azure Speech
+      index-tts-vllm:
+        description: https://index-tts.github.io/
+        title: Bilibili / IndexTTS
+        callout_indextts2_unavailable_title: Suporte Limitado
+        callout_indextts2_unavailable: O suporte para IndexTTS2 está indisponível no momento. Por favor, use IndexTTS.
+      azure-ai-foundry:
+        description: Azure AI Foundry
+        title: Azure AI Foundry
+      minimax:
+        description: minimaxi.com
+        title: MiniMax
+      minimax-global:
+        description: minimax.io
+        title: MiniMax Global
+      mistral:
+        description: mistral.ai
+        title: Mistral
+      moonshot:
+        description: moonshot.ai
+        title: Moonshot AI
+      modelscope:
+        description: modelscope.cn
+        title: ModelScope
+      novita:
+        description: novita.ai
+        title: Novita
+      ollama:
+        description: ollama.ai
+        title: Ollama
+      openai:
+        description: openai.com
+        title: OpenAI
+      openai-compatible:
+        description: Compatível com OpenAI
+        title: Compatível com OpenAI
+      nvidia:
+        description: build.nvidia.com
+        title: NVIDIA NIM
+      n1n:
+        description: n1n.ai - Provedor de API de IA de alto desempenho.
+        title: n1n
+      openrouter:
+        description: openrouter.ai
+        title: OpenRouter
+      openrouter-audio-speech:
+        description: openrouter.ai
+        title: OpenRouter
+      perplexity:
+        description: perplexity.ai
+        title: Perplexity
+      player2:
+        description: player2.game
+        title: Player2
+      together:
+        description: together.ai
+        title: Together.ai
+      google-generative-ai:
+        description: gemini.google.com
+        title: Google Gemini
+      groq:
+        description: groq.com
+        title: Groq
+      featherless:
+        description: featherless.ai
+        title: Featherless AI
+      lm-studio:
+        description: lmstudio.ai
+        title: LM Studio
+      vllm:
+        description: vllm.ai
+        title: vLLM
+      volcengine:
+        description: volcengine.com
+        fields:
+          field:
+            appId:
+              description: App ID do projeto que pode ser obtido no Console
+              label: App ID
+        title: Volcano Engine
+      xai:
+        description: x.ai
+        title: xAI
+      302-ai:
+        description: 302.AI
+        title: 302.AI
+      comet-api:
+        description: CometAPI.com
+        title: Comet API
+      cerebras:
+        description: cerebras.ai
+        title: Cerebras
+      aliyun-nls:
+        description: Aliyun NLS
+        title: Aliyun NLS
+      browser-web-speech-api:
+        description: STT nativo do navegador (requer Chrome/Edge/Safari)
+        title: Web Speech API
+      transcriptions:
+        playground:
+          title: Playground de Transcrição
+      aihubmix:
+        title: AIHubMix
+        description: https://aihubmix.com (10% de desconto)
+    title: Provedores
+  connection:
+    description: Configurar conexão do servidor WebSocket
+    title: Conexão
+    websocket-url:
+      description: Endereço completo do servidor WebSocket (ex., ws://localhost:6121/ws)
+      label: Endereço do Servidor WebSocket
+      placeholder: ws://localhost:6121/ws
+  scene:
+    description: Configurar o ambiente onde o personagem vive
+    title: Cena
+  system:
+    color-scheme:
+      description: Alterar o esquema de cores do palco.
+      title: Esquema de Cores
+    developer:
+      description: Algumas opções de desenvolvedor.
+      title: Desenvolvedores
+    general:
+      description: Tema escuro, idiomas, etc.
+      title: Geral
+    description: Personalize seu palco!
+    sections:
+      section:
+        custom-color:
+          fields:
+            field:
+              primary-color:
+                label: Cor primária
+                rgb-on:
+                  title: Quero Dinâmico!
+          title: Esquema de Cores
+        developer:
+          title: Desenvolvedor
+          sections:
+            section:
+              performance-visualizer:
+                title: Visualizador de Desempenho
+                description: Alternar sobreposição de FPS/tarefas longas/memória
+              markdown-stress:
+                title: Stress de Markdown
+                description: Testar análise e renderização de markdown com cargas pesadas de chat
+              use-magic-keys:
+                title: Ferramenta useMagicKeys
+                description: Testar atalhos
+              audio-record:
+                title: Gravação de Áudio
+                description: Testar composables relacionados a áudio
+              background-gradient-blending:
+                title: Mesclagem de cor de tema de fundo
+                description: Testar mesclagem e tema
+              background-removal:
+                title: Remoção de fundo (WebGPU necessário)
+                description: Utilitário para remoção de fundo
+              chat:
+                title: Chat
+                description: Chat
+              gesture-circle:
+                title: Círculo de Gestos (apenas Desktop)
+                description: Testar reconhecimento de gestos
+              image:
+                title: Imagem
+                description: Imagem
+              polaroid:
+                title: Polaroid
+                description: Utilitário para tirar fotos de modelos
+              context-flow:
+                description: >-
+                  Inspecionar atualizações de contexto recebidas e eventos de
+                  stream de chat enviados
+              websocket-inspector:
+                title: Inspetor WebSocket
+                description: Inspecionar tráfego bruto de WebSocket
+              vibrant:
+                title: Extração de Cores
+                description: Testar extração de cores
+              providers-transcription-realtime-aliyun-nls:
+                title: Transcritor em Tempo Real Aliyun
+                description: >-
+                  Transmitir áudio do microfone para Aliyun NLS e inspecionar
+                  transcrições ao vivo
+              performance-playground:
+                title: Playground de Desempenho
+                description: 'Playground de expressões VRM + sincronização labial TTS'
+        theme-presets:
+          presets:
+            default:
+              colors:
+                color-1: Verde AIRI
+              description: A cor temática esverdeada padrão, trazida pelo AIRI para você!
+              title: Cor Padrão
+            morandi:
+              colors:
+                color-1: Taupe
+                color-2: Bege
+                color-3: Cinza Cinzento
+                color-4: Taupe Claro
+                color-5: Marfim
+                color-6: Cinza Oliva
+                color-7: Areia
+                color-8: Cinza Quente
+              description: Tons suaves e discretos inspirados nas pinturas de Giorgio Morandi
+              title: Cores Morandi
+            monet:
+              colors:
+                color-1: Azul Céu
+                color-2: Névoa
+                color-3: Areia
+                color-4: Verde Musgo
+                color-5: Lírio d'Água
+                color-6: Trigo
+                color-7: Azul Ardósia
+                color-8: Sálvia
+              description: Paleta impressionista inspirada nas obras de Claude Monet
+              title: Cores Monet
+            japanese:
+              colors:
+                color-1: Bronzeado
+                color-2: Taupe Quente
+                color-3: Âmbar Escuro
+                color-4: Café
+                color-5: Bronze
+                color-6: Dourado
+                color-7: Mostarda
+                color-8: Âmbar
+              description: Paleta de cores japonesa tradicional
+              title: Cores Japonesas
+            nordic:
+              colors:
+                color-1: Azul Nórdico
+                color-2: Gelo
+                color-3: Fiorde
+                color-4: Aço
+                color-5: Glaciar
+                color-6: Ardósia
+                color-7: Nuvem
+                color-8: Pedra
+              description: Esquema de cores minimalista escandinavo
+              title: Cores Nórdicas
+            chinese:
+              colors:
+                color-1: Aurora Rosada
+                color-2: Vermelho Chinês
+                color-3: Marrom Esfumaçado
+                color-4: Verde Bambu
+                color-5: Roxo Escuro
+                color-6: Amarelo Dourado
+                color-7: Azul Celeste
+                color-8: Ocre
+              description: >-
+                Cores tradicionais chinesas, derivadas de tecidos antigos,
+                porcelana e pinturas
+              title: Cores Tradicionais Chinesas
+          title: Presets de Esquema de Cores
+    title: Sistema
+  page:
+    developers:
+      open-devtools:
+        title: Abrir Ferramentas de Desenvolvedor
+        button: Abrir
+sections:
+  section:
+    general:
+      title: Geral
+theme:
+  title: Tema
+  description: |
+    Trocar o tema base do AIRI, modo Claro ou modo Escuro.
+title: Configurações
+voices: Voz
+vrm:
+  change-model:
+    from-file: Carregar do Arquivo
+    from-file-select: Selecionar
+    from-url: Carregar da URL
+    from-url-confirm: Carregar
+    from-url-placeholder: Insira a URL do modelo VRM
+    title: Trocar Modelo
+  title: Configurações VRM
+  scale-and-position:
+    model-info-title: Informações de Tamanho do Modelo
+    model-info-x: Largura (X)
+    model-info-y: Altura (Y)
+    model-info-z: Profundidade (Z)
+    tips: |
+      Edite a posição inicial do modelo VRM.
+      Os eixos de coordenadas estão visualizados.
+    scale: Escala
+    x: Deslocamento X
+    'y': Deslocamento Y
+    z: Deslocamento Z
+    fov: FOV (graus)
+    rotation-y: Rotação (eixo Y)
+    camera-distance: Distância da câmera
+    eye-tracking-mode:
+      title: Olhando para
+      options:
+        option:
+          camera: Câmera
+          mouse: Mouse
+          disabled: Desativado
+  switch-to-vrm:
+    title: Trocar para Avatar Live2D?
+    change-to-vrm: Clique aqui para trocar para a configuração de avatar Live2D
+  theme-color-from-model:
+    button-extract:
+      title: Extrair
+  skybox:
+    skybox-intensity: Intensidade do SkyBox
+    skybox-specular-mix: Mistura Especular
+websocket-secure-enabled:
+  title: Ativar WebSocket Seguro (WSS)
+  description: >-
+    Ativar WSS (WebSocket Seguro) para permitir conexões HTTPS para mobile
+    (pocket) no modo de desenvolvimento. Isso gerará automaticamente um
+    certificado autoassinado.
+wip:
+  title: Em Desenvolvimento
+  description: >-
+    Este recurso está atualmente em desenvolvimento e ainda não está disponível
+    publicamente. Verifique em futuras atualizações para esta funcionalidade.

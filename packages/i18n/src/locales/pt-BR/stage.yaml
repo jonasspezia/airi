@@ -1,0 +1,38 @@
+chat:
+  message:
+    character-name:
+      airi: AIRI
+      core-system: Sistema Central
+      you: Você
+  reasoning: Raciocínio
+message: Diga algo...
+operations:
+  load-models: Carregar Modelos
+  load-models-status:
+    loading: Carregando
+    ready: Pronto
+select-a-audio-input: Selecione uma Entrada de Áudio
+select-a-model: Selecione um modelo
+select-a-voice: Escolha uma voz
+viewers:
+  debug-menu:
+    emotions: Emoções
+    emotions-btn:
+      angry: 😠 Raiva
+      awkward: 😳 Constrangido
+      happy: 😄 Feliz
+      neutral: 🙂 Neutro
+      question: 🤔 Dúvida
+      sad: 😫 Triste
+      surprised: 🤯 Surpreso
+      think: 🤨 Pensando
+    vrm:
+      camera: Câmera
+      model:
+        title: Modelo
+profile-switcher:
+  no-profile: Sem Perfil
+  no-profiles: Nenhum perfil ainda
+  save-as-new: Salvar como Novo Perfil
+  manage: Gerenciar Perfis
+waiting: Aguardando

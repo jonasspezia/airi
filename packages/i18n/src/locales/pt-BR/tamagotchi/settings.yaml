@@ -1,0 +1,55 @@
+allow-visible-on-all-workspaces:
+  title: Visibilidade entre Áreas de Trabalho
+  description: Permitir que a janela seja visível em todas as áreas de trabalho, apenas macOS.
+pages:
+  modules:
+    mcp-server:
+      description: Conectar e gerenciar servidor e ferramentas MCP
+      title: Servidor MCP
+  system:
+    sections:
+      section:
+        window-shortcuts:
+          title: Atalhos de Teclado
+    window-shortcuts:
+      description: Modificar os atalhos da janela.
+      title: Atalhos da Janela
+      toggle-move:
+        label: Alternar Movimento
+      toggle-resize:
+        label: Alternar Redimensionamento
+      toggle-ignore-mouse-event:
+        label: Alternar Ignorar Evento do Mouse
+      press-keys: Pressione as Teclas...
+    developer:
+      sections:
+        section:
+          use-window-mouse:
+            title: Ferramenta useWindowMouse
+            description: Testar a posição do cursor na janela Electron
+devtools:
+  title: Desenvolvedor
+  pages:
+    context-flow:
+      title: Fluxo de Contexto
+    lag-visualizer:
+      title: Visualizador de Latência
+    performance-visualizer:
+      title: Visualizador de Desempenho
+      description: Alternar sobreposição de FPS/tarefas longas/memória
+    markdown-stress:
+      title: Teste de Stress Markdown
+      description: Testar análise e renderização de markdown com cargas pesadas de chat
+    widgets-calling:
+      title: Chamada de Widgets
+
+screen-capture:
+  permissions-prompt:
+    title: Captura de Tela
+    description: Para capturar telas ou janelas, são necessárias permissões de gravação de tela e áudio do sistema.
+    open-preferences: Abrir Preferências do Sistema
+    dismiss: Dispensar
+    instructions:
+      step-1: Abra "Preferências do Sistema", selecione "Privacidade e Segurança" na barra lateral.
+      step-2: Nas seções "Gravação de Tela e Áudio do Sistema" e "Somente Gravação de Áudio do Sistema", ative os interruptores para AIRI.
+      step-2-note: Se AIRI não estiver listada, adicione-a manualmente clicando no botão "+" e selecionando AIRI na pasta Aplicativos.
